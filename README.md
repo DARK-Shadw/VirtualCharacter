@@ -92,15 +92,12 @@ The character will now operate as a standalone application on your desktop.
 ### Project Documentation
 For Software:
 
-Screenshots (Add at least 3)
+##### Screenshots 
 ![Screenshot1](Add screenshot 1 here with proper name) Add caption explaining what this shows
-
+![image alt](https://github.com/DARK-Shadw/VirtualCharacter/blob/aa9e0f988efb30c7a038adef562648331ac7e7b6/WhatsApp%20Image%202024-11-02%20at%209.22.25%20PM.jpeg)
 ![Screenshot2](Add screenshot 2 here with proper name) Add caption explaining what this shows
 
 ![Screenshot3](Add screenshot 3 here with proper name) Add caption explaining what this shows
-
-Diagrams
-![Workflow](Add your workflow/architecture diagram here) Add caption explaining your workflow
 
 ###Project Demo
 # Video
