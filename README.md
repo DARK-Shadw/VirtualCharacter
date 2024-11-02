@@ -1,6 +1,6 @@
 # VIRTUAL CHARACTER🎯
 A playful virtual character that lives on your desktop,creating moments of mischief and entertainment by interacting with your windows,
-chasing your mouse cursor, more! Written in GDScript,with potential integration of game engines to enhance interactions
+chasing your mouse cursor, more! Written in GDScript, with potential integration of game engines to enhance interactions
  
 ## Team Name: Algorithm Alchemists 
 ### Team Members
@@ -45,7 +45,7 @@ watch him land realistically, all while complaining about it.
 For Software:
 
 - [Languages used](#GDScript). 
-- [GameEngine used](#GoDot).
+- [GameEngine used](#Godot).
 - [Tools used](#Photoshop,#Spine2d).
 
 ## Implementation
@@ -54,30 +54,20 @@ For Software:
 
 # Installation
 
-- Godot Engine: Download and install the latest version of Godot Engine.
-- Python (optional): Only required if integrating Python for specific functionalities like window manipulation.
+- Godot Engine: Download and install Godot Engine (ver 4.2.2 stable is preffered).
 - Git: For version control and cloning the repository.
 
 
 Steps:
 1. Clone the Repository:
 
-git clone https://github.com/yourusername/virtual-desktop-companion.git
-cd virtual-desktop-companion
+git clone https://github.com/DARK-Shadw/VirtualCharacter.git
 
 2. Open Project in Godot:
 
 - Launch Godot and click on Import.
 - Navigate to the cloned repository folder, select the project.godot file, and open it.
 - The project will now appear in Godot’s project list. Click on it to open.
-
-3. Install Required Add-ons:
-
-Enable any necessary plugins or add-ons under Project > Project Settings > Plugins.
-
-4. Configure Settings:
-
-Adjust character behavior in the settings.json file, such as movement speed, idle time, and interaction frequency.
 
 # Run
 
@@ -88,14 +78,15 @@ Running in the Godot Editor
 In the Godot editor, click the Play button (▶) at the top right, or press F5.
 The character should appear on your screen, performing random behaviors based on your settings.
 
-2. Testing Interactions:
+2. Exporting and building for Windows:
 
-To test behaviors, modify settings in the relevant scripts (e.g., Character.gd for animations and interactions).
-Use the Godot Debugger to monitor real-time logs, test actions, and validate interactions like mouse chasing or window pushing.
+   In the Godot editor, click Project, export then add new if necessary and select Windows
+   Select the Export Project at the botton to build the Exceutable file
+   ( An exported executable is already ab=vailable in the export folder)
 
-3. Launch the Application:
+4. Launch the Application:
 
-Locate the exported file in your specified folder and run it.
+Locate the exported executable file in your specified folder and run it.
 The character will now operate as a standalone application on your desktop.
 
 ### Project Documentation
