@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://coaamq83ju5ay"]
+
+[ext_resource type="Texture2D" uid="uid://cmf51mk4r8hea" path="res://Assets/StickmanPack/Idle/Thin.png" id="1_6w5ur"]
+[ext_resource type="Script" path="res://Charcter.gd" id="2_b8o2e"]
+
+[node name="Character" type="Sprite2D"]
+scale = Vector2(2, 2)
+texture = ExtResource("1_6w5ur")
+hframes = 6
+script = ExtResource("2_b8o2e")

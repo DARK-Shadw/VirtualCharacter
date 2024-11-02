@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=3 uid="uid://coaamq83ju5ay"]
+
+[ext_resource type="Texture2D" uid="uid://cmf51mk4r8hea" path="res://Assets/StickmanPack/Idle/Thin.png" id="1_6w5ur"]
+[ext_resource type="Script" path="res://Charcter.gd" id="2_b8o2e"]
+
+[sub_resource type="Animation" id="Animation_mwygq"]
+resource_name = "Idle"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+
+[sub_resource type="Animation" id="Animation_yefvp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_u4gu0"]
+_data = {
+"Idle": SubResource("Animation_mwygq"),
+"RESET": SubResource("Animation_yefvp")
+}
+
+[node name="Character" type="Sprite2D"]
+scale = Vector2(2, 2)
+texture = ExtResource("1_6w5ur")
+hframes = 6
+script = ExtResource("2_b8o2e")
+DEBUG = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_u4gu0")
+}
+autoplay = "Idle"

@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://okru1a2nl2n6"]
+
+[ext_resource type="Script" path="res://Scripts/Setup.gd" id="1_i862d"]
+[ext_resource type="Script" path="res://Scripts/Boundary.gd" id="3_67hyq"]
+[ext_resource type="PackedScene" uid="uid://bcyh6rrx368ph" path="res://Scenes/goku.tscn" id="4_yi5o6"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_i862d")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+script = ExtResource("3_67hyq")
+
+[node name="Goku" parent="." instance=ExtResource("4_yi5o6")]
+position = Vector2(927, 440)
