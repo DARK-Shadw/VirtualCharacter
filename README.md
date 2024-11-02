@@ -28,13 +28,13 @@ the way, or simulate life’s little annoyances and joys.
 
 ## The Solution (that nobody asked for)
 
-This project introduces Desktop Danny, a digital beingwho can express boredom, joy, and even righteous indignationwhen ignored too long.
-Desktop Danny not only follows yourmouse around and waves, but also gets mischievous if left idle too long, perhaps moving files around 
+This project introduces Goku, a digital beingwho can express boredom, joy, and even righteous indignationwhen ignored too long.
+Goku not only follows yourmouse around and waves, but also gets mischievous if left idle too long, perhaps moving files around 
 or hiding behind your windows. And, in the event of a crisis (like you deleting a folder he likes),he’s programmed to enter a dramatic 
 "dragged-off-screen" mode, complete with ragdoll physics, as he mourns the loss.
 
 Core Features:
-Emotional Intelligence (EI): Danny’s got feelings, lots of them, which are randomly triggered tomake him feel more “human.”
+Emotional Intelligence (EI): Goku’s got feelings, lots of them, which are randomly triggered tomake him feel more “human.”
 Sometimes he just stares into the void.
 Physics-Driven Reactions: Pick him up, throw him around, and
 watch him land realistically, all while complaining about it.
