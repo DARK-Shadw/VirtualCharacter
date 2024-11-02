@@ -1,6 +1,6 @@
 # VIRTUAL CHARACTER🎯
-A playful virtual character that lives on your desktop,creating moments of mischief and entertainment by interacting with your windows,
-chasing your mouse cursor, more! Written in GDScript, with potential integration of game engines to enhance interactions
+A playful virtual character that lives on your desktop, creating moments of mischief and entertainment by interacting with you,
+chasing your mouse cursor and more! Build using Godot engine. Made flexibly so that new interactions can be added easily.
  
 ## Team Name: Algorithm Alchemists 
 ### Team Members
@@ -9,9 +9,9 @@ chasing your mouse cursor, more! Written in GDScript, with potential integration
 - Member 3: Ami Asok - Cochin University College of Engineering, Kuttanad
 
 ## Project Description
-The Virtual Desktop Companion is a lighthearted desktop application that introduces a virtual character to your computer screen. 
+The Virtual Character is a lighthearted desktop application that introduces a virtual character to your computer screen. 
 Inspired by classic desktop buddies, this character is more than a static sprite; it has a dynamic personality, sometimes just 
-chilling, and at other times creating playful chaos.It can move around, chase your mouse cursor, and more, all designed to add 
+chilling, and at other times creating playful chaos. It can move around, chase your mouse cursor, and more, all designed to add 
 a bit of personality and fun to your daily workflow.
 
 ## The Problem (that doesn't exist)
