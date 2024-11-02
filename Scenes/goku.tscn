@@ -1140,7 +1140,7 @@ offset_right = 100.0
 offset_bottom = 189.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 8.88889)
+position = Vector2(-4.44444, 6.66667)
 shape = SubResource("CapsuleShape2D_5a2ry")
 
 [node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
