@@ -93,7 +93,7 @@ The character will now operate as a standalone application on your desktop.
 For Software:
 
 ##### Screenshots 
-![Screenshot1](Add screenshot 1 here with proper name) Add caption explaining what this shows
+The below screenshot shows that the Character(Goku) is taking his walk on the menu bar, he can also follow your cursor.
 ![image alt](https://github.com/DARK-Shadw/VirtualCharacter/blob/aa9e0f988efb30c7a038adef562648331ac7e7b6/WhatsApp%20Image%202024-11-02%20at%209.22.25%20PM.jpeg)
 ![Screenshot2](Add screenshot 2 here with proper name) Add caption explaining what this shows
 
