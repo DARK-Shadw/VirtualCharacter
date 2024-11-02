@@ -7,18 +7,23 @@ extends Node
 var boredom: float = 0
 var curiosity: float = 0
 var excitement: float = 0
+var screenleft: float = 0
 
 # THRESHOLD
 const BOREDOM_THRESHOLD:= 50
 const CURIOSITY_THRESHOLD:= 30
 const EXCITEMENT_THRESHOLD:= 60
-
+const SCREENTHRESHOLD:= 60
 
 var current_state: State
 var states: Dictionary = {}
+var follow_threshold = 60
+
 
 var dragging:= false
-
+var _throw_velocity = Vector2()
+var thrown:= false
+var outofscreen:= false
 
 func _ready():
 	for child in get_children():
@@ -70,10 +75,10 @@ func _on_button_button_down():
 # for drag release
 func _on_button_button_up():
 	dragging = false
-	on_child_transitioned(current_state, "fall")
+	thrown = true
+	on_child_transitioned(current_state, "throw")
 
 func _chase_state():
-	var follow_threshold = 100
 	if curiosity < CURIOSITY_THRESHOLD:
 		return
 	var mouse_x = owner.get_global_mouse_position().x
@@ -85,7 +90,12 @@ func _chase_state():
 		_update_state_by_attributes()
 
 func _player_not_on_ground():
-	if not owner.is_on_floor() and not dragging:
+	if not owner.is_on_floor() and outofscreen and screenleft > SCREENTHRESHOLD:
+		on_child_transitioned(current_state, "return")
+	elif owner.is_on_floor() and not dragging and thrown:
+		on_child_transitioned(current_state, "idle")
+		thrown = false
+	if not owner.is_on_floor() and not dragging and not thrown and not outofscreen:
 		on_child_transitioned(current_state, "fall")
 	elif owner.is_on_floor() and _get_current_state() == "fall":
 		on_child_transitioned(current_state, "idle")
@@ -111,9 +121,15 @@ func _manage_attributes(_delta):
 		
 	if _get_current_state() == "drag":
 		excitement += _delta * 5
+		
+	if outofscreen:
+		screenleft += _delta * 10
 	
 
 func _update_state_by_attributes():
+	if screenleft > SCREENTHRESHOLD:
+		on_child_transitioned(current_state, "return")
+		screenleft = 0
 	if boredom > BOREDOM_THRESHOLD and _get_current_state() == "idle":
 		on_child_transitioned(current_state, "wander")
 		boredom = 0
@@ -127,3 +143,12 @@ func _update_state_by_attributes():
 		pass
 
 
+
+
+func _on_visible_on_screen_notifier_2d_screen_exited():
+	outofscreen = true
+	thrown = false
+	
+func entered_screen():
+	outofscreen = false
+	on_child_transitioned(current_state, "fall")

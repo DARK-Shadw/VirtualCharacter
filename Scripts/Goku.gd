@@ -13,49 +13,16 @@ var texture_corners: PackedVector2Array = PackedVector2Array()
 
 #Throw Variables
 var dragging = false
-var previous_position: Vector2
-var throw_velocity: Vector2
-#
-## Get the gravity from the project settings to be synced with RigidBody nodes.
-#var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _ready():
 	animationplayer.play("Idle")
-	
-
 
 func _physics_process(delta):
-	
-	#if not is_on_floor():
-		#state_machine.on_child_transitioned(state_machine.current_state, "fall")
-	
-	#if velocity.length() > 0:
-		#animationplayer.play("Walk")
-	#elif velocity.length() == 0:
-		#animationplayer.play("Idle")
-		
 	if velocity.x > 0:
 		sprite_2d.flip_h = false
 	else:
-		sprite_2d.flip_h = true	
-	
-	#if dragging:
-		#animationplayer.play("Idle")
-		## Calculate throw velocity based on mouse movement
-		#throw_velocity = (get_global_mouse_position() - previous_position) / delta
-		## Update position to follow mouse
-		#global_position = get_global_mouse_position()
-		#previous_position = global_position
-	#
-	#
-	#
-	## Add the gravity.
-	#else:
-		#animationplayer.play("Walk")
-		#if not is_on_floor():
-			#velocity.y += gravity * delta
-		#else:
-			#position.x += speed * delta
+		sprite_2d.flip_h = true
+
 	set_passthrough(sprite_2d)
 	move_and_slide()
 	
@@ -72,24 +39,4 @@ func set_passthrough(sprite: AnimatedSprite2D):
 		top_left + Vector2(0, frame_size.y)                 # Bottom left
 	])
 	DisplayServer.window_set_mouse_passthrough(texture_corners)
-	
 
-
-#func _input(event):
-	#if event is InputEventMouseButton:
-		#if event.button_index == MOUSE_BUTTON_LEFT:
-			#if event.pressed and get_global_mouse_position().distance_to(global_position) < 20:
-				#dragging = true
-			#else:
-				#dragging = false
-				## Throw the character if released
-				#velocity = throw_velocity
-
-#func _draw():
-	## Draw the passthrough area borders for debugging
-	#print("why are u running?")
-	#if texture_corners.size() == 4:
-		#for i in range(texture_corners.size()):
-			#var next = (i + 1) % texture_corners.size()
-			#draw_line(to_local(texture_corners[i]), to_local(texture_corners[next]), Color(1, 0, 0), 2) # Red border
-#

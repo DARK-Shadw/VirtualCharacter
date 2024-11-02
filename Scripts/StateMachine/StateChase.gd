@@ -5,7 +5,7 @@ class_name StateChase
 @onready var state_machine = $".."
 
 var move_speed := 40.0
-var follow_threshold:= 100
+var follow_threshold:= 60
 
 func Enter():
 	animation_player.play("Walk")

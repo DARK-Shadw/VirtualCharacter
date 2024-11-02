@@ -17,9 +17,9 @@ func _create_taskbar_boundary():
 	var staticBody = StaticBody2D.new()
 	var taskbar_height = get_taskbar_height()
 	var taskbar_width = DisplayServer.screen_get_size().x
-	print("Taskbar Height: ", taskbar_height)
-	print("TaskBar Width: ", taskbar_width)
-	print("DisplayServer Height: ", DisplayServer.screen_get_size())
+	#print("Taskbar Height: ", taskbar_height)
+	#print("TaskBar Width: ", taskbar_width)
+	#print("DisplayServer Height: ", DisplayServer.screen_get_size())
 	
 	var shape = RectangleShape2D.new()
 	shape.set_size(Vector2(taskbar_width, taskbar_height))
