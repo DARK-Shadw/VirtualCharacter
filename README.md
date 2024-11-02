@@ -95,8 +95,8 @@ For Software:
 ##### Screenshots 
 The below screenshot shows that the Character(Goku) is taking his walk on the menu bar, he can also follow your cursor.
 ![image alt](https://github.com/DARK-Shadw/VirtualCharacter/blob/aa9e0f988efb30c7a038adef562648331ac7e7b6/WhatsApp%20Image%202024-11-02%20at%209.22.25%20PM.jpeg)
-![Screenshot2](Add screenshot 2 here with proper name) Add caption explaining what this shows
-
+The below screenshot shows that the Character(Goku) returning on a cloud after it was yeeted out of the window.
+![image alt](https://github.com/DARK-Shadw/VirtualCharacter/blob/2918b7a414d9b5de09665ae624a8d08731ad2793/WhatsApp%20Image%20cloud.jpeg)
 ![Screenshot3](Add screenshot 3 here with proper name) Add caption explaining what this shows
 
 ###Project Demo
