@@ -105,9 +105,6 @@ For Software:
 # Video
 [Add your demo video link here] Explain what the video demonstrates
 
-# Additional Demos
-[Add any extra demo materials/links]
-
 Team Contributions
 - Aswin Mathew: [Specific contributions].
 - Anzil T: [Specific contributions].
