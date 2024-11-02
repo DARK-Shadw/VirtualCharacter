@@ -6,10 +6,6 @@ func _ready():
 	_create_boundaries()
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
 func get_taskbar_height():
 	return DisplayServer.screen_get_size().y - DisplayServer.screen_get_usable_rect().size.y
 

@@ -17,7 +17,7 @@ var dragging = false
 func _ready():
 	animationplayer.play("Idle")
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if velocity.x > 0:
 		sprite_2d.flip_h = false
 	else:
