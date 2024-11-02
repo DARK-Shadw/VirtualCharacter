@@ -92,14 +92,16 @@ The character will now operate as a standalone application on your desktop.
 ### Project Documentation
 For Software:
 
-##### Screenshots 
-The below screenshot shows that the Character(Goku) is taking his walk on the menu bar, he can also follow your cursor.
+#### Screenshots 
+###### The below screenshot shows that the Character(Goku) is taking his walk on the menu bar after the great entry fall.
 ![image alt](https://github.com/DARK-Shadw/VirtualCharacter/blob/aa9e0f988efb30c7a038adef562648331ac7e7b6/WhatsApp%20Image%202024-11-02%20at%209.22.25%20PM.jpeg)
-The below screenshot shows that the Character(Goku) returning on a cloud after it was yeeted out of the window.
+###### The below image shows that the Character(Goku) being held by the mouse allowing it to be dragged around and even yeeted. When thrown,Goku reappears,riding on a cloud.
+![image alt](https://github.com/DARK-Shadw/VirtualCharacter/blob/cc611d2011174eef5d7150f506ecd6f6682a507d/WhatsApp%20Image%20fly.jpeg)
+###### The below screenshot shows that the Character(Goku) returning on a cloud after it was yeeted out of the window.
 ![image alt](https://github.com/DARK-Shadw/VirtualCharacter/blob/2918b7a414d9b5de09665ae624a8d08731ad2793/WhatsApp%20Image%20cloud.jpeg)
-![Screenshot3](Add screenshot 3 here with proper name) Add caption explaining what this shows
 
-###Project Demo
+
+#### Project Demo
 # Video
 [Add your demo video link here] Explain what the video demonstrates
 
