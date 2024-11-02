@@ -106,6 +106,6 @@ For Software:
 [Add your demo video link here] Explain what the video demonstrates
 
 Team Contributions
-- Aswin Mathew: [Specific contributions].
-- Anzil T: [Specific contributions].
-- Ami Asok: [Specific contributions].
+- Aswin Mathew: [Coding].
+- Anzil T: [Asset creation and Coding].
+- Ami Asok: [Coding].
