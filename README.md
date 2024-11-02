@@ -44,9 +44,9 @@ watch him land realistically, all while complaining about it.
 
 For Software:
 
-- [Languages used](#GDScript). 
-- [GameEngine used](#Godot).
-- [Tools used](#Photoshop,#Spine2d).
+- [Languages used] (#GDScript). 
+- [GameEngine used] (#Godot).
+- [Tools used] (#Photoshop,#Spine2d).
 
 ## Implementation
 
@@ -60,10 +60,10 @@ For Software:
 
 Steps:
 1. Clone the Repository:
+   
+   git clone https://github.com/DARK-Shadw/VirtualCharacter.git
 
-git clone https://github.com/DARK-Shadw/VirtualCharacter.git
-
-2. Open Project in Godot:
+3. Open Project in Godot:
 
 - Launch Godot and click on Import.
 - Navigate to the cloned repository folder, select the project.godot file, and open it.
