@@ -103,7 +103,7 @@ For Software:
 
 #### Project Demo
 # Video
-[Add your demo video link here] Explain what the video demonstrates
+[GOKU.zip](https://github.com/user-attachments/files/17607791/GOKU.zip)
 
 Team Contributions
 - Aswin Mathew: [Coding].
